@@ -1,4 +1,4 @@
-# FuKaneMeleSlab
+# Tight-binding model for a topological insulator slab
 
 Microscopic tight-binding model of topological a insulator slab as in:
 
@@ -8,10 +8,25 @@ The original tight-binding Hamiltonian is presented here:
 
 L. Fu, C. L. Kane, and E. J. Mele, Phys. Rev. Lett. 98, 106803 (2007)
 
-Dependencies:
-gcc
-Armadillo
-LAPACK
-
-To compile run:
+### Getting started
+To compile run:a
+```
 g++ -std=c++11 -o slab slab.cc -llapack -lblas -lgfortran -larmadillo
+```
+To run execute
+```
+./slab
+```
+which will print the k-point and save the corresponding eigenvalues in the file output_bs.txt
+
+### Dependencies
+
+Armadillo, LAPACK, BLAS
+
+## Authors
+
+* **Gleb Siroki**
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
